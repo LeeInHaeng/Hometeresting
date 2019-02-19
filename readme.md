@@ -37,20 +37,20 @@ Team ODD - IDEA (O.I)
   - 연산량은 많아지지만, Smooth Shading을 통해 에셋의 꺾어지는 부분들을 부드럽게 처리되도록 계산 (linear interpolation 원리)
 - OI_AssetDic.js
   - OI_Assets에서 로딩 후 배열에 담아놓은 에셋들을 편하게 사용하기 위해 Mapping 처리
-  - Python에서 Dictionary 형태와 같이 bed0 : oi.Assets.bedAsset[0] 의 형태로 맵핕
+  - Python에서 Dictionary 형태와 같이 bed0 : oi.Assets.bedAsset[0] 의 형태로 맵핑
 - OI_Camera.js
   - FuctureFreeCamera 라는 커스텀 카메라를 바탕으로 해당 프로젝트에 맞게 수정한 형태
   - 미끄러짐 방지, 회전 축 이상 해결, Q와 E키 구현 등
 - OI_Event.js
   - 구현한 거의 모든 JS를 인자로 받고, 대부분의 이벤트를 동작시키는 core JS
-  - 매우 높은 결합도로 잘못된 설계를 바탕으로 구현, 페어 프로그래밍 경험
+  - 매우 높은 결합도로 후회가 남는 부분, 페어 프로그래밍 경험
 - OI_FrameEvent.js
   - 3D 오브젝트 중 액자 에셋을 클릭했을 때 동작하는 이벤트 구현
   - 대표 이미지 설정, 방의 주인이 올려놓은 사진 등을 볼 수 있음
   - 혼자 하는 테스트 플레이와, 여러 사람이 있는 멀티플레이 모드 두 방식을 나눠서 구현한 상태
   - galleria.js 를 사용
 - OI_RTC.js
-  - 실시간 음성채팅 및 텍스트채팅을 동작시키는 이벤트 구현
+  - 실시간 음성 채팅 및 텍스트 채팅을 동작시키는 이벤트 구현
   - RTCMultiConnection.js와 socket.io를 바탕으로 구현
 - OI_TestPlay.js
   - 3인칭 시점에서 1인칭 시점으로 변화하는 TestPlay 이벤트 구현
